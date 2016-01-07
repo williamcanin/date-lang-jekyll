@@ -53,7 +53,7 @@
 
 #
 #  Global variables
-CHECK_INIT="1"
+CHECK_INIT="0"
 EXT_CONV="jk"
 DIR_ROOT="lang"
 

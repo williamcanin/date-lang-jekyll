@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <p><span class="post-meta"> Date default: {{ post.date | date: "%b %-d, %Y" }}</span></p>
+        <p> Portuguese - {% include date/lang/pt_PT/pt_PT.jk %} </p>
+        <p> English -  {% include date/lang/en_US/en_US.jk %} </p>
+        <p> Chinese -  {% include date/lang/ch_CH/ch_CH.jk %} </p>
+        <p> German -   {% include date/lang/de_DE/de_DE.jk %} </p>
+        <p> Spanish -  {% include date/lang/es_ES/es_ES.jk %} </p>
+        <p> Frances -  {% include date/lang/fr_FR/fr_FR.jk %} </p>
+        <p> Italian -  {% include date/lang/it_IT/it_IT.jk %} </p>
+        <p> Japonese - {% include date/lang/ja_JP/ja_JP.jk %} </p>
+        <p> Russian -  {% include date/lang/ru_RU/ru_RU.jk %} </p>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+        <p> Portuguese - {% include date/lang/pt_PT/pt_PT.jk %} </p>
+        <p> English -  {% include date/lang/en_US/en_US.jk %} </p>
+        <p> Chinese -  {% include date/lang/ch_CH/ch_CH.jk %} </p>
+        <p> German -   {% include date/lang/de_DE/de_DE.jk %} </p>
+        <p> Spanish -  {% include date/lang/es_ES/es_ES.jk %} </p>
+        <p> Frances -  {% include date/lang/fr_FR/fr_FR.jk %} </p>
+        <p> Italian -  {% include date/lang/it_IT/it_IT.jk %} </p>
+        <p> Japonese - {% include date/lang/ja_JP/ja_JP.jk %} </p>
+        <p> Russian -  {% include date/lang/ru_RU/ru_RU.jk %} </p>
+    {% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+</article>
