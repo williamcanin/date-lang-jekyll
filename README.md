@@ -1,6 +1,8 @@
-# Date Lang Jekyll - The date on the language.
+# Date Lang Jekyll
 
-"Data Lang Jekyll" is a plugin for templates in Jekyll in order to include the date (% m% d,% Y - with name of month extensive ) in Posts and Pages.
+"Data Lang Jekyll" is a plugin for templates in Jekyll in order to 
+include the date (% m% d,% Y - with name of month extensive ) in 
+Posts and Pages.
 
 ## Usage
 
