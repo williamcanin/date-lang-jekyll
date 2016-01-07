@@ -87,7 +87,7 @@ Lets test?!
 Jekyll in the template, insert the plug *Date Lang Jekyll* with the following line:
 
 ```
-{% include date/lang/en_US.jk %}
+{% include date/lang/en_US/en_US.jk %}
 ```
 
 
