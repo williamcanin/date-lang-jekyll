@@ -296,6 +296,7 @@ function _config_post_page(){
 # Menu
 case $1 in
     -i|--init )
+      rm -rf .git
       _convert
       _select_language
     ;;
