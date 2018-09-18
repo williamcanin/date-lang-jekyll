@@ -97,7 +97,7 @@ Jekyll in the template, insert the plug *Date Lang Jekyll* with the following li
 
 See a demonstration of how the date will be:
 
-[DEMO](http://williamcanin.com/date-lang-jekyll)
+[DEMO](http://williamcanin.me/date-lang-jekyll)
 
 
 ## License
